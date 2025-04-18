@@ -67,7 +67,12 @@ export default function Section3() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="flex flex-col mt-12 items-center font-display justify-center min-h-screen bg-[#141414]">
+    <motion.div className="flex flex-col mt-12 items-center font-display justify-center min-h-screen bg-[#141414]"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.3 }}
+    transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <motion.h1
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -123,6 +128,6 @@ export default function Section3() {
           />
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }

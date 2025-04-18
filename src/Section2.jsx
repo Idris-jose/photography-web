@@ -1,7 +1,7 @@
 import image1 from './assets/pexels-bentonphotocinema-828380.jpg'
 import image2 from './assets/pexels-bess-hamiti-83687-35537.jpg'
 import image3 from './assets/pexels-david-bartus-43782-610293.jpg'
-
+import { motion } from 'framer-motion';
 export default function Section2(){
   const projects = [
     {
@@ -22,7 +22,13 @@ export default function Section2(){
   ];
     return (
         <>
-        <section className="bg-gradient-to-b from-gray-100 to-white text-black py-16 mt-22">
+      
+        <motion.section className="bg-gradient-to-b from-gray-100 to-white text-black py-16 mt-22"
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: false, amount: 0.3 }}
+             transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           <div className="max-w-6xl mx-auto px-6">
             {/* Heading */}
             <div className="text-center mb-12">
@@ -62,7 +68,8 @@ export default function Section2(){
               
             </div>
           </div>
-        </section>
+        </motion.section>
+     
         </>
     )
 }
