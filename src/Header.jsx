@@ -28,16 +28,16 @@ export default function Header() {
                 >
                     <ul className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-medium items-start md:items-center">
                         <li className="border-2 rounded-full px-3 py-1 border-gray-300 hover:px-5 duration-300 ease-in-out hover:bg-black block md:inline">
-                            <a href="#" className="block md:inline">Bio</a>
+                            <a href="#bio" className="block md:inline">Bio</a>
                         </li>
                         <li className="border-2 rounded-full px-3 py-1 border-gray-300 hover:px-5 duration-300 ease-in-out hover:bg-black block md:inline">
-                            <a href="#" className="block md:inline">Portfolio</a>
+                            <a href="#portfolio" className="block md:inline">Portfolio</a>
                         </li>
                         <li className="border-2 rounded-full px-3 py-1 border-gray-300 hover:px-5 duration-300 ease-in-out hover:bg-black block md:inline">
-                            <a href="#" className="block md:inline">Works</a>
+                            <a href="#works" className="block md:inline">Works</a>
                         </li>
                         <li className="border-2 rounded-full px-3 py-1 border-gray-300 hover:px-5 duration-300 ease-in-out hover:bg-black block md:inline">
-                            <a href="#" className="block md:inline">Reach Out</a>
+                            <a href="#reach" className="block md:inline">Reach Out</a>
                         </li>
                     </ul>
                 </nav>
